@@ -136,3 +136,42 @@ img {
     clear: both;
     background-color:beige;
 } */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    height: 500px;
+    width: 900px;
+    border: 1px solid black;
+    padding: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse; */
+    /* flex-flow: ; */
+    /* justify-content: flex-start; works on main-axis
+    justify-content: flex-end; */
+    justify-content: center;
+    /* justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+
+    /* align-items: flex-start; works on cross-axis */
+    align-items: center;
+
+    align-content: flex-start;
+    gap: ;
+}
+
+.item{
+    height: 300px;
+    border: 1px solid brown;
+    background-color: cadetblue;
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+}
