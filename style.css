@@ -148,24 +148,35 @@ img {
     border: 1px solid black;
     padding: 30px;
     flex-direction: row;
-    flex-wrap: wrap;
-    /* flex-direction: row-reverse;
-    flex-direction: column;
-    flex-direction: column-reverse; */
-    /* flex-flow: ; */
+    flex-wrap: wrap; 
+    /* flex wrap is by default no wrap, boxes will shrink to fit in the border, wrap reverse */
+    /* flex-direction: row-reverse; will start from right
+    flex-direction: column; main axis- vertical cross axis- horizontal
+    flex-direction: column-reverse; will start from bottom */ 
+    /* flex-flow: ; combination of direction and wrap*/
     /* justify-content: flex-start; works on main-axis
     justify-content: flex-end; */
     justify-content: center;
-    /* justify-content: space-around;
-    justify-content: space-between;
-    justify-content: space-evenly; */
+    /* justify-content: space-around; jitna space left mein utna hi right mein
+    justify-content: space-between; 
+    justify-content: space-evenly; equal spaces in all sides */
 
-    /* align-items: flex-start; works on cross-axis */
+    /* align-items: flex-start; works on cross-axis
+    align-items: flex-end;
+    align-items: stretch;
+    align-items: baseline; */
     align-items: center;
+    align-content: space-between; 
+    gap: 20px;
 
-    align-content: flex-start;
-    gap: ;
+    /* align-content: flex-start; works on cross-axis
+    align-content: flex-end;
+    align-content: center;
+    align-content: stretch;
+    align-content: space-around; */
 }
+
+/* by default sbhi child elements ka order 0 hota hai */
 
 .item{
     height: 300px;
@@ -174,4 +185,12 @@ img {
     text-align: center;
     margin: 20px;
     width: 300px;
+    flex-grow: 1;
+}
+
+.item4{
+    /* order: -1; */
+    flex-grow: 2;
+    flex-shrink: ;
+    align-self: flex-end;
 }
