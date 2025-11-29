@@ -178,7 +178,7 @@ img {
 
 /* by default sbhi child elements ka order 0 hota hai */
 
-.item{
+/* .item{
     height: 300px;
     border: 1px solid brown;
     background-color: cadetblue;
@@ -188,9 +188,9 @@ img {
     flex-grow: 1;
 }
 
-.item4{
+.item4{ */
     /* order: -1; */
-    flex-grow: 2;
+    /* flex-grow: 2;
     flex-shrink: ;
     align-self: flex-end;
-}
+} */
